@@ -1,0 +1,25 @@
+.btn-salvar{
+    width: 150px;
+    height: 30px;
+}
+.cont{
+    width:100%;
+    height:25px;
+  }
+.cont-button1{
+    width:162px;
+    float: left;
+}
+.cont-button2{
+    width:25px;
+    float: right;
+  }
+
+.btn {
+    height:25px;
+    background-color: #fdfd96;
+    border: none;
+}
+.btn-delete{
+    width:25px;
+}

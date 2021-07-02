@@ -1,0 +1,38 @@
+.contain-lateral {
+    width: 510px;
+    height: 600px;
+}
+
+.contain-lateral h1 {
+    text-align: center;
+    font-size: 20pt;
+    color: rgb(56, 197, 197);
+    margin: 23px;
+}
+
+.contain-lateral .contain-lista {
+    padding: 1px;
+    margin: 0 auto;
+    width: 220px;
+    height: 530px;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.contain-lateral .contain-lista ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 2px;
+}
+
+.contain-lateral .contain-lista li {
+    font-size: 10.8pt;
+    padding: 2.5px;
+    margin: 2px;
+    text-align: left;
+    list-style-type: none;
+    border: solid 2px #cfd9ce;
+    background-color: #fdfd96;
+}
+

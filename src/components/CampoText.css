@@ -1,0 +1,14 @@
+.campoText{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    width: 490px;
+    height: 519px;
+    padding:6px;
+    background-color: #fdfd96;
+    box-shadow: 0 0 0 0;
+    border:0 none;
+    outline: 0;
+}
+.campoText{
+    font-family: Courier;
+}
