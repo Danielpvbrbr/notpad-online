@@ -36,15 +36,21 @@ export default class App extends Component{
     componentDidMount(){
         const cookies = new Cookies();
         const Id = cookies.get('Id');
-        this.setState({IdCockie: Id})
+        this.setState({IdCockie: Id});
 
         const Usuario = cookies.get('Usuario');
-        this.setState({UserCockie: Usuario})
+        this.setState({UserCockie: Usuario});
 
         axios.get(`http://localhost:8000/api/list/${Id}`)
         .then(res => {
             //  console.log('=>1',res.data) 
-        })
+        });
+
+        if(Id === undefined){
+            alert('Sessão expirada, realiza login novamente')
+            window.location.replace('/')
+        }
+
         
     }
 
