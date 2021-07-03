@@ -60,7 +60,7 @@ export default class Login extends Component{
                             
                             <label>Senha:</label>
                             <Input
-                             type='texto' 
+                             type='password' 
                              className="btnPass" 
                              name="Pass" 
                              placeholder="Digite sua Senha"
@@ -72,7 +72,7 @@ export default class Login extends Component{
                             <Link to={'/registro'}>
                                 <label className="registrar">Cadastre-se</label>
                             </Link>
-                            <label className="esqSenha">Esqueceu a senha</label>
+                            {/* <label className="esqSenha">Esqueceu a senha</label> */}
                         </fieldset>
                     </form>
                     

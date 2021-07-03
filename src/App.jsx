@@ -5,6 +5,7 @@ import ContainLateral from './components/ContainLateral';
 import Input from './components/Input';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
+import plus from "../src/Icon/plus.svg";
 
 export default class App extends Component{
     constructor(props) {
@@ -121,8 +122,9 @@ render(){
                         onChange={this.getTituloValue}
                         placeholder="Nova página"
                         maxLength="15"
-                        required
                         />
+
+                        <img src={plus} className="btn-adicionar" onClick={()=> window.location.replace('/home')}/>
                         
                         <Input
                         className="btn-salvar" 
@@ -134,13 +136,14 @@ render(){
 
                     </form>
                     <section className="area-section">
-                            <label className="labelUser">Usuário:</label>
+                            <label className="labelUser">Logado com:</label>
                             <Input
                             className="userInput" 
                             type="texto" 
                             value={this.state.UserCockie}
                             name="usuario" 
                             readOnly
+                            required
                             disabled="disabled"
                             />
 
@@ -172,13 +175,9 @@ render(){
                     
                     </section>
 
-                    {/* <div className='containInfoMaio'>
-                        <section>
-                           <h4>Usuário:</h4> <p>{this.state.UserCockie}</p> 
-                            <button onClick={this.logout}>Sair</button>
-                        </section>
-                        
-                    </div> */}
+                    <footer>
+                        <p>Desenvolvido por DNSoluction</p> 
+                    </footer> 
                 
                 </div>
                

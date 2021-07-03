@@ -29,7 +29,6 @@ export default class ContainLateral extends Component {
 
     delUser = (id) => {
         const confirm = window.confirm("Voçe deseja realmente deletar a anotação?")
-        console.log(id)
         if(confirm === true){
             axios.delete(`http://localhost:8000/api/delete/${id}`)
             .then(res =>{

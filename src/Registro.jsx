@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import Input from  './components/Input'
-import './Registro.css'
+import Input from  './components/Input';
+import './Registro.css';
+import { Link } from 'react-router-dom'
 
 export default class Registro extends Component{
     constructor(props){
@@ -12,7 +13,6 @@ export default class Registro extends Component{
             getEmail: '',
             getUsuario: '',
             getSenha: '',
-            confSenha: ''
         }
     }
     handleChange = (e) => {
@@ -62,12 +62,12 @@ export default class Registro extends Component{
                                 <Input type='texto' className="campIput" required onChange={this.handleChange} name="getUsuario" placeholder="Digite seu usuário" maxLength='14'/>                         
                             
                             <label>Senha:</label>
-                                <Input type='texto' className="campIput" required onChange={this.handleChange} name="getSenha" placeholder="Digite sua senha" maxLength='6'/>
-                            
-                            <label>Confirma a senha:</label>
-                                <Input type='texto' className="campIput" required onChange={this.handleChange} name="confSenha" placeholder="Confirma a senha" maxLength='6'/>
-                            
+                                <Input type='password' className="campIput" required onChange={this.handleChange} name="getSenha" placeholder="Digite sua senha" maxLength='6'/>
+                            <p></p>
                             <button>Cadastre-se</button>
+                            <Link to={'/'}>
+                                <button >Já tem uma conta?</button>
+                            </Link>
                         </fieldset>
                     </form>
                 

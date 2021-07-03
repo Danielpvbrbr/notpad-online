@@ -24,20 +24,23 @@
 
 /* Container forumulario */
 .area-salvar{
+  display: flex;
   margin-top: 10px;
-  clear: both;
 }
 
 .area-salvar .campo-texto{
-  float: left;
+  /* float: left; */
   width: 220px;
   height: 30px;
 }
-
+.btn-adicionar{
+  width: 25px;
+  margin-left: 2px;
+}
 .area-salvar .btn-salvar{
-  float: right;
+  margin-left: 100px;
+  /* float: right; */
   height: 35px;
-  margin-left:7.6em;
 }
 #space{
   clear: both;
@@ -48,49 +51,35 @@
   margin-top: 3px;
 }
 .area-section .labelUser{
-  margin-top: 3px;
-  font-size: 12pt;
+  margin-top: 3.1px;
+  font-size: 10pt;
   float: left;
-  color: #1f1f14;
-  justify-self:center;
+  color: #6E6E6E;
+  align-self: center;
 }
 .area-section .userInput{
   float: left;
+  color: rgb(56, 197, 197);
   width: 120px;
   height:21px;
+  background-color:#cfd9ce ;
+  border:none;
+  margin-left: 2px;
 }
 .area-section .btn-sair{
+  color: #6E6E6E;
   font-size:10pt;
   width: 50px;
   height:25px;
   float: right;
-
+  background-color:#d1dad1 ;
+  border:none;
 }
 
-.containInfoMaio{
-  width: 500px;
-  height: 30px;
-}
-.containInfoMaio section{
-  width: 500px;
-  height: 20px;
-  margin-top: 7px;
-  display:flex;
-}
-
-.containInfoMaio h4{
-  align-self: center;
-  font-size: 10.5pt;
-  font-weight: 600;
-  margin-right: 3px;
-  color: #6E6E6E;
-  justify-self:center ;
-  
-}
-.containInfoMaio p{
-  align-self: center;
+footer p{
+  margin-left: 40px;
+  justify-content: center;
   font-size: 9.5pt;
-  color: #1f1f14;
-  justify-self:center;
+  color: #6E6E6E;
 }
 
