@@ -20,8 +20,8 @@ export default class ContainLateral extends Component {
         .then(res =>{
             const lista = res.data;
             this.setState({ lista });
-        })  
-        
+        }) 
+              
     }
     getTitulo = (id) =>{
         this.props.setInfo(id)
